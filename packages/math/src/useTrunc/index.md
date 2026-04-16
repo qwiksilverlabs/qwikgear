@@ -1,0 +1,3 @@
+# useTrunc
+
+Reactive `Math.trunc`
