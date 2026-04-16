@@ -13,3 +13,12 @@ export function getSignalValue<T>(imposter: MaybeSignal<T>): T {
 
 	return imposter;
 }
+
+export type MaybeSignalArgs<T> = MaybeSignal<T>[] | [MaybeSignal<T>[]];
+
+export function toValueArgs<T>(args: MaybeSignalArgs<T>) {
+	return args.flatMap((v) => {
+		const value = toValue(v);
+		return Array.isArray(value) ? value.map((i) => toValue(i)) : [value];
+	});
+}
