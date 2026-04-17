@@ -13,6 +13,10 @@ export default defineConfig({
 				command: 'vitepress build packages',
 				dependsOn: ['update', '@lazyqwik/metadata#build'],
 			},
+			docs: {
+				command: 'vitepress dev packages',
+				dependsOn: ['update', '@lazyqwik/metadata#build'],
+			},
 		},
 	},
 	fmt: {

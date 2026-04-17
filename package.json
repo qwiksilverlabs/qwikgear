@@ -13,7 +13,6 @@
 		"up": "vp exec taze",
 		"bump": "vp exec bumpp",
 		"prepare": "vp config",
-		"docs": "vitepress dev packages --host",
 		"docs:preview": "vitepress preview packages",
 		"update": "vp run -r update"
 	},
