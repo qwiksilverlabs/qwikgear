@@ -7,7 +7,7 @@ export default defineConfig({
 		tasks: {
 			build: {
 				command: 'vp run -r build',
-				dependsOn: ['update', '@lazyqwik/metadata#build'],
+				dependsOn: ['update'],
 			},
 			'docs:build': {
 				command: 'vitepress build packages',
@@ -20,6 +20,22 @@ export default defineConfig({
 			'docs:preview': {
 				command: 'vitepress preview packages',
 				dependsOn: ['docs:build'],
+			},
+			check: {
+				command: 'vp check',
+				dependsOn: ['update', '@lazyqwik/metadata#build'],
+			},
+			'check:fix': {
+				command: 'vp check --fix',
+				dependsOn: ['update', '@lazyqwik/metadata#build'],
+			},
+			test: {
+				command: 'vpr -r test',
+				dependsOn: ['update', '@lazyqwik/metadata#build'],
+			},
+			'test:watch': {
+				command: 'vpr -r test:watch',
+				dependsOn: ['update', '@lazyqwik/metadata#build'],
 			},
 		},
 	},

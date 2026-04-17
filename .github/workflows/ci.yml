@@ -18,8 +18,7 @@ jobs:
           cache: true
 
       - run: vp install
-      - run: vpr update
-      - run: vp check
+      - run: vpr check
 
   test:
     runs-on: ${{ matrix.os }}
@@ -39,6 +38,5 @@ jobs:
           cache: true
 
       - run: vp install
-      - run: vpr update
-      - run: vp check
+      - run: vpr check
       - run: vpr test
