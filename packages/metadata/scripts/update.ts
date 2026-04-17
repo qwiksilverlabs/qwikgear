@@ -12,7 +12,7 @@ const rootDir = resolve(__dirname, '../../..');
 const packageDir = resolve(__dirname, '..');
 const packagesDir = resolve(rootDir, 'packages');
 
-const searchPatterns = modules.map((mod) => `${mod}/**/use*`);
+const searchPatterns = modules.flatMap((mod) => [`${mod}/**/use*`, `${mod}/**/logic*`]);
 
 const rawFunctions = globSync(searchPatterns, {
 	onlyDirectories: true,
