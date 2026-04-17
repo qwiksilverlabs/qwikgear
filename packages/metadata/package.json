@@ -24,7 +24,6 @@
 		"directory": "packages/metadata"
 	},
 	"files": [
-		"index.json",
 		"dist"
 	],
 	"type": "module",
