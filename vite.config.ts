@@ -15,7 +15,7 @@ export default defineConfig({
 			},
 			docs: {
 				command: 'vitepress dev packages',
-				dependsOn: ['update', '@lazyqwik/metadata#build'],
+				dependsOn: ['update'],
 			},
 		},
 	},

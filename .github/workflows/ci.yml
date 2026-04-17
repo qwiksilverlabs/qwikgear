@@ -18,7 +18,7 @@ jobs:
           cache: true
 
       - run: vp install
-      - run: vpr build
+      - run: vpr update
       - run: vp check
 
   test:
@@ -39,6 +39,6 @@ jobs:
           cache: true
 
       - run: vp install
-      - run: vpr build
+      - run: vpr update
       - run: vp check
       - run: vpr test
