@@ -3,6 +3,27 @@
 	"version": "0.0.1",
 	"private": true,
 	"description": "Collection of essential Qwik hooks",
+	"keywords": [
+		"qwik",
+		"qwik-use",
+		"qwikgear",
+		"utils"
+	],
+	"homepage": "https://github.com/qwiksilverlabs/qwikgear",
+	"bugs": {
+		"url": "https://github.com/qwiksilverlabs/qwikgear/issues"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Toby Nguyen",
+		"email": "hi@tobynguyen.net",
+		"url": "https://tobynguyen.net"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/qwiksilverlabs/qwikgear.git",
+		"directory": "packages/metadata"
+	},
 	"files": [
 		"index.json",
 		"dist"
@@ -12,6 +33,9 @@
 		".": "./dist/index.mjs",
 		"./types": "./dist/types.mjs",
 		"./package.json": "./package.json"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"scripts": {
 		"update": "jiti scripts/update.ts",
