@@ -26,7 +26,7 @@ export function useCounter(
 	const inc = $((delta: number = 1) => {
 		state.value = Math.max(Math.min(max, state.value + delta), min);
 	});
-	const dec = $((delta = 1) => {
+	const dec = $((delta: number = 1) => {
 		state.value = Math.min(Math.max(min, state.value - delta), max);
 	});
 	const set = $((value: number) => {
