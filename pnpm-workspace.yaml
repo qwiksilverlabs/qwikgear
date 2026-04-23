@@ -8,17 +8,17 @@ catalogs:
     '@builder.io/qwik': ^1.19.2
     '@vite-pwa/vitepress': ^1.1.0
     'bumpp': '^11.0.1'
-    es-toolkit: ^1.45.1
+    es-toolkit: ^1.46.0
     jiti: ^2.6.1
     oxc-minify: ^0.125.0
     pathe: ^2.0.3
     taze: ^19.11.0
     tinyglobby: ^0.2.16
     vite: npm:@voidzero-dev/vite-plus-core@latest
-    vite-plus: ^0.1.18
+    vite-plus: ^0.1.19
     vitepress: 2.0.0-alpha.17
     vitest: npm:@voidzero-dev/vite-plus-test@latest
-    vue: ^3.5.32
+    vue: ^3.5.33
     '@shikijs/vitepress-twoslash': ^4.0.2
     gsap: ^3.15.0
   lint:
