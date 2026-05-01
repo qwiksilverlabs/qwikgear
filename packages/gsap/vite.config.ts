@@ -3,12 +3,11 @@ import { qwikVite } from '@builder.io/qwik/optimizer';
 
 export default defineConfig({
 	pack: {
-		target: 'es2020',
 		entry: ['./src/index.ts'],
 		format: ['esm'],
 		dts: true,
 		clean: true,
-		exports: true,
+		outExtensions: () => ({ js: '.qwik.mjs', dts: '.d.ts' }),
 	},
 	test: {
 		include: ['src/**/*.test.ts', 'src/**/*.test.tsx'],
