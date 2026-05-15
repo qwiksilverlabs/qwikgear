@@ -9,9 +9,6 @@ export default defineConfig({
 		clean: true,
 		outExtensions: () => ({ js: '.qwik.mjs', dts: '.d.ts' }),
 	},
-	test: {
-		include: ['src/**/*.test.ts', 'src/**/*.test.tsx'],
-	},
 
 	resolve: {
 		tsconfigPaths: true,
