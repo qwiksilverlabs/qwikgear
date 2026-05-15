@@ -1,4 +1,3 @@
-// oxlint-disable qwik/no-use-visible-task
 import {
 	implicit$FirstArg,
 	type NoSerialize,

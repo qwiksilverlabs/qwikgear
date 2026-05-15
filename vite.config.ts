@@ -62,6 +62,15 @@ export default defineConfig({
 		ignorePatterns: ['dist/**', 'node_modules/**'],
 		jsPlugins: ['oxlint-plugin-qwik'],
 		extends: [strict],
+		overrides: [
+			{
+				files: ['**/*.ts'],
+				rules: {
+					'qwik/use-method-usage': 'off',
+					'qwik/no-use-visible-task': 'off',
+				},
+			},
+		],
 	},
 	staged: {
 		'*': 'vp check --fix',
